@@ -1,0 +1,114 @@
+@import url( 'https://fonts.googleapis.com/css?family=Monoton|Playfair+Display|Raleway');
+@panel-well: rgba(255, 255, 255, 0.4);
+/*Cosmetics*/
+body {
+    font-family: 'Raleway', sans-serif;
+    -webkit-transition: background-color 1s;
+    /* Safari */
+    transition: background 1s;
+    background: white;
+}
+
+h1 {
+    font-family: 'Monoton', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+
+    &::first-letter {
+        font-size: 1.2em;
+    }
+}
+
+div,
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+footer {
+    background-color: @panel-well !important;
+
+    div,
+    p {
+        color: black;
+    }
+}
+
+.jumbotron {
+    background-color: transparent;
+
+    blockquote {
+        padding-left: 2%;
+        border-left: 6px solid black;
+        font-size: 1.2em;
+    }
+}
+
+.panel-heading-inform {
+    color: #FF4047;
+}
+
+.panel-heading-educate {
+    color: #00FF8B;
+}
+
+.panel-heading-argue {
+    color: #CC1477;
+}
+
+.panel-heading-inspire {
+    color: #14B9CC;
+}
+
+.background-change {
+  transition: color 1s;
+}
+
+.well {
+    background-color: @panel-well;
+}
+
+.navbar-default {
+    background-color: fadein(@panel-well,20%);
+    border-color: rgba(0,0,0,0);
+    padding: 2%;
+}
+
+a.active {
+    font-weight: bold;
+}
+/*Tweaks*/
+.fit {
+    width: auto;
+    height: auto;
+}
+
+.navbar.navbar-inverse {
+    border: none;
+}
+
+.navbar .navbar-brand {
+    padding-top: 0;
+}
+
+.navbar .navbar-brand img {
+    height: 50px;
+}
+
+table {
+  background-color: @panel-well;
+  color: black;
+  a {
+    color: black !important;
+  }
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 120px;
+}

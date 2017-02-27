@@ -1,0 +1,18 @@
+<section id="upcomingarticles" data-background-color="#00FF8B">
+  <div class="well well-md">
+    <h2>Upcoming Articles</h2>
+    <table class="table">
+      <tr>
+        <th>Date</th>
+        <th>Title</th>
+      </tr>
+      {% for post in site.posts %}
+      <tr>
+
+        <td>{{ post.date }}</td>
+        <td><a href="{{ post.url }}" style="color:white;">{{ post.title }}</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</section>
